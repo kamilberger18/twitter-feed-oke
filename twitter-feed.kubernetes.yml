@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: twitter-feed-v2
-  namespace: berger
   labels:
     commit: 9a8fa77277c4a8c3c96d96d4b804e83c26ac6cc0
 spec:
@@ -43,7 +42,6 @@ apiVersion: v1
 kind: Service
 metadata:
   name: twitter-feed
-  namespace: berger
   labels:
     app: twitter-feed
     commit: 9a8fa77277c4a8c3c96d96d4b804e83c26ac6cc0
