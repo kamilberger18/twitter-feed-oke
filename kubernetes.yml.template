@@ -22,7 +22,7 @@ spec:
         imagePullPolicy: Always
         ports:
         - name: twitter-feed
-          containerPort: 8081
+          containerPort: 8080
           protocol: TCP
       imagePullSecrets:
         - name: wercker
@@ -38,7 +38,7 @@ metadata:
 spec:
   ports:
   - port: 30000
-    targetPort: 8081
+    targetPort: 8080
   selector:
     app: twitter-feed
   type: ClusterIP
